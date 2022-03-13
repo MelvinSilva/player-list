@@ -1,0 +1,52 @@
+.header {
+  h1 {
+    color: white;
+    font-size: 3.3rem;
+    text-align: center;
+    letter-spacing: 9px;
+    margin-top: 10px;
+    margin-bottom: 40px;
+    text-shadow: 0 0 5px #fff, 0 0 15px rgb(220, 8, 8), 0 0 10px rgba(220, 8, 8, 0.906),
+      -5px 4px 10px rgba(0, 0, 0, 0.178);
+  }
+  img {
+    width: 600px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  nav {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    font-size: 1.3rem;
+
+    ul {
+      display: flex;
+
+      a {
+        text-decoration: none;
+        color: $black;
+        border-radius: 10px;
+        width: 120px;
+        text-align: center;
+        margin-right: 5px;
+
+        &:visited {
+          text-decoration: none;
+          color: $black;
+        }
+        &:hover {
+          background: white;
+        }
+      }
+      a.nav-active {
+        background: $color-1;
+
+        &:hover {
+          background: $black;
+        }
+      }
+    }
+  }
+}
