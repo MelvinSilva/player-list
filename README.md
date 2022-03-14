@@ -1,4 +1,4 @@
-https://player-list-sport.herokuapp.com/
+https://wiki-player.herokuapp.com/
 
 
 # Getting Started with Create React App
