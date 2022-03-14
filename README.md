@@ -1,4 +1,4 @@
-https://melvinsilva.github.io/player-list/
+https://player-list-sport.herokuapp.com/
 
 
 # Getting Started with Create React App
