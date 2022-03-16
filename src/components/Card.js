@@ -35,7 +35,7 @@ const Card = ({ player }) => {
 
 
   return (
-    <div data-aos="flip-left">
+    <div data-aos="flip-right">
       <div className="card">
         <img alt="ok" src={player.strThumb ? player.strThumb : "https://www.djfabe.com/wp-content/uploads/2019/02/visuel-non-disponible.jpg"} />
         <h2>{player.strPlayer}</h2><br />
