@@ -28,7 +28,7 @@ const Form = () => {
                 {playerData
                     .slice(0, 12)
                     .map((player) => (
-                        <Card key={player.id} player={player} />
+                        <Card key={player.id} player={player} displayBtn={false} />
                     ))}
             </div>
         </div>

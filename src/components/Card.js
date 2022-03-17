@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import Aos from 'aos';
 import "aos/dist/aos.css"
 
-const Card = ({ player }) => {
+const Card = ({ player, displayBtn }) => {
 
   useEffect(() => { // effet d'apparition des articles avec le scroll
     Aos.init({ duration: 1000 })
@@ -50,10 +50,9 @@ const Card = ({ player }) => {
         {player.strKit ? <h5>Crampons : {player.strKit}</h5> : ""}
         <div className="bio"><h3>Biographie : </h3> {player.strDescriptionFR ? <p>{player.strDescriptionFR}</p> : <p>{player.strPlayer}, n'a pas de biographie pour le moment sur notre site. Nous mettons tout en oeuvre dans les plus bref délais.</p>}</div>
 
-        <div className="btn-container">
-          <div className="btn" onClick={() => addStorage()}>Ajouter aux favoris</div>
-          <div className="btn2" onClick={() => deleteStorage()}>Supprimer des favoris</div>
-        </div>
+        {!displayBtn && <div className="btn" onClick={() => addStorage()} >Ajouter aux favoris</div>}
+        {displayBtn && <div className="btn2" onClick={() => deleteStorage()}>Supprimer des favoris</div>}
+
 
       </div>
     </div>
