@@ -24,7 +24,7 @@ const Favoris = () => {
             <Header />
             <h2>FAVORIS 😍</h2>
             <div className="result">
-                {listData.length > 0 ? (listData.map(player => <Card player={player} key={player.id} />)) : (<h2>Aucun favoris pour le moment</h2>)}
+                {listData.length > 0 ? (listData.map(player => <Card player={player} key={player.id} displayBtn={true}/>)) : (<h2>Aucun favoris pour le moment</h2>)}
                 {/* si les données sont sup à zéro tu me map le tableau dans Card sinon tu affiches "aucun favoris" */}
                 
             </div>
