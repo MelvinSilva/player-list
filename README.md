@@ -1,4 +1,4 @@
-https://wiki-player.herokuapp.com/
+https://wiki-player.vercel.app/
 
 
 # Getting Started with Create React App
