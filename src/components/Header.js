@@ -15,7 +15,7 @@ const Header = () => {
                         </NavLink>
                     </ul>
                 </nav>
-                <h1>PLAYER LIST</h1>
+                <h1>WIKI-PLAYER</h1>
             </div>
         </div>
     );
