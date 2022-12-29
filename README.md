@@ -1,4 +1,4 @@
-https://melvinsilva.github.io/player-list/
+https://wiki-player.vercel.app/
 
 
 # Getting Started with Create React App
