@@ -5,7 +5,7 @@ $color-1: #546fe4;
 $color-2: #212040;
 $color-3: rgb(100, 100, 100);
 $black: #060d2c;
-$white: rgb(245, 245, 245);
+$white: rgb(255, 255, 255);
 
 * {
   margin: 0;
@@ -15,8 +15,8 @@ $white: rgb(245, 245, 245);
 }
 
 body {
-  background:$white;
-  color: $black;
+  background: $black;
+  color: $white;
 }
 li {
   list-style: none;

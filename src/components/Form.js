@@ -5,7 +5,7 @@ import Card from './Card';
 const Form = () => {
 
     const [playerData, setPlayerData] = useState([])
-    const [recherche, setRecherche] = useState(["P"])
+    const [recherche, setRecherche] = useState(["Ronaldo"])
 
     useEffect(() => {
         axios
@@ -20,16 +20,15 @@ const Form = () => {
         <div className="form-component">
             <div className="form-container">
                 <form>
-                    <input type="text" onChange={(e) => setRecherche(e.target.value)} placeholder="Entrez le nom d'un joueur"
+                    <input type="text" onChange={(e) => setRecherche(e.target.value)} placeholder="Entrez le nom d'un sportif"
                         id="search-input" />
                 </form>
             </div>
             <div className="result">
-                {playerData
-                    .slice(0, 12)
+                {playerData ? playerData 
                     .map((player) => (
                         <Card key={player.id} player={player} displayBtn={false} />
-                    ))}
+                    )) : "Désolé je n'ai pas trouvé ! Merci de bien verifier votre recherche."}
             </div>
         </div>
     );

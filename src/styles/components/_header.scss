@@ -1,12 +1,12 @@
 .header {
   h1 {
     color: white;
-    font-size: 3.3rem;
+    font-size: 40px;
     text-align: center;
-    letter-spacing: 9px;
-    margin-top: 40px;
+    letter-spacing: 6px;
+    margin-top: 10px;
     margin-bottom: 40px;
-    text-shadow: 0 0 20px rgb(177, 6, 6);
+    text-shadow: 0 0 20px rgb(160, 160, 160);
   }
   img {
     width: 600px;
@@ -15,34 +15,31 @@
     margin-right: auto;
   }
   nav {
-    position: absolute;
-    top: 16px;
-    left: 16px;
-    font-size: 1.3rem;
+    margin: 5px;
+    font-size: 15px;
    
 
     ul {
       display: flex;
+      justify-content: center;
     
       a {
         text-decoration: none;
-        color: $black;
+        color: $white;
         border-radius: 10px;
-        width: 120px;
-        text-align: center;
-        margin-right: 5px;
+        padding: 10px;
         
 
         &:visited {
           text-decoration: none;
-          color: $black;
+          color: $white;
         }
         &:hover {
-          background: white;
+          background: rgb(208, 7, 7);
         }
       }
       a.nav-active {
-        background: $color-1;
+        background: $white;
 
         &:hover {
           background: $black;
