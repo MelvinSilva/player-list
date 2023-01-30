@@ -9,7 +9,7 @@ const Form = () => {
 
     useEffect(() => {
         axios
-            .get(`https://www.thesportsdb.com/api/v1/json/2/searchplayers.php?p=${recherche}`)
+            .get(`https://www.thesportsdb.com/api/v1/json/3/searchplayers.php?p=${recherche}`)
             .then((res) => setPlayerData(res.data.player))
 
 
