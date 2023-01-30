@@ -12,7 +12,7 @@ const Favoris = () => {
         // si il y a quelque chose dans localstorage tu split a la virgule sinon tableau vide
 
         for (let i = 0; i < playerId.length; i++) {
-            axios.get(`https://www.thesportsdb.com/api/v1/json/2/lookupplayer.php?id=${playerId[i]}`)
+            axios.get(`https://www.thesportsdb.com/api/v1/json/3/lookupplayer.php?id=${playerId[i]}`)
                  .then((res) => setListData((listData) => [...listData, ...res.data.players])) 
                  // on casse la liste et on affiche le reste dans le meme tableau 
              }
